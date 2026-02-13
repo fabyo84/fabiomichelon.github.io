@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Michelon | Professional DJ & Event Specialist</title>
+    <title>Fabio Michelon | DJ & Events</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
         * { box-sizing: border-box; }
@@ -16,115 +16,104 @@
             font-family: 'Montserrat', sans-serif;
             background-color: #ffffff;
             color: #333;
-            line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
-        /* Navigazione Elegante */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             z-index: 1000;
-            border-bottom: 1px solid #eee;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
         }
 
         nav a {
             text-decoration: none;
             color: #1a1a1a;
-            font-size: 0.8rem;
-            font-weight: 600;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #c5a059;
-        }
+        nav a:hover { color: #c5a059; }
 
-        /* Layout Principale */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 20px;
-            background: radial-gradient(circle, #fff 0%, #f4f4f4 100%);
-        }
-
-        .container {
-            max-width: 800px;
+            background: radial-gradient(circle, #fff 0%, #f9f9f9 100%);
+            padding-top: 60px;
         }
 
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            line-height: 0.9;
             margin: 0;
             color: #1a1a1a;
-            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        .line {
-            width: 50px;
-            height: 3px;
-            background: #c5a059;
-            margin: 25px auto;
         }
 
         h2 {
-            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 1.1rem;
-            color: #1a1a1a;
-            margin-bottom: 25px;
+            font-size: 1.2rem;
+            color: #c5a059;
+            margin-top: 15px;
+            letter-spacing: 5px;
             text-transform: uppercase;
-            letter-spacing: 4px;
         }
 
         p {
             font-size: 1.1rem;
             color: #666;
-            margin-bottom: 40px;
-            font-weight: 300;
+            margin: 30px auto;
             max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            font-weight: 300;
         }
 
         .btn-whatsapp {
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            background-color: #1a1a1a; /* Nero per massima eleganza */
+            background-color: #25D366;
             color: white;
-            padding: 20px 40px;
+            padding: 18px 35px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
         }
 
         .btn-whatsapp:hover {
-            background-color: #c5a059;
-            transform: translateY(-2px);
+            transform: scale(1.05);
+            background-color: #20ba5a;
         }
 
-        /* Sezione temporanea per lo scroll (così vedi il menu che resta su) */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        svg { width: 22px; height: 22px; fill: white; }
+
         .content-section {
             padding: 100px 20px;
             text-align: center;
-            background: white;
+            min-height: 400px;
         }
     </style>
 </head>
@@ -134,28 +123,28 @@
         <a href="#">Home</a>
         <a href="#info">Info</a>
         <a href="#gallery">Gallery</a>
-        <a href="https://api.whatsapp.com/send?phone=393385330102">Contatti</a>
+        <a href="https://api.whatsapp.com/send?phone=393385330102" target="_blank">Contatti</a>
     </nav>
 
     <section class="hero">
         <div class="container">
-            <h1>Fabio Michelon</h1>
-            <div class="line"></div>
+            <h1>Fabio<br>Michelon</h1>
             <h2>DJ • Karaoke • Music</h2>
             <p>
-                L'atmosfera perfetta per il tuo evento.<br>
-                <strong>Professionalità ed eleganza</strong> per matrimoni e party esclusivi.
+                Professionalità ed energia per il tuo evento.<br>
+                <strong>Matrimoni, Feste Private e Locali.</strong>
             </p>
             
-            <a href="https://api.whatsapp.com/send?phone=393385330102&text=Ciao%20Fabio,%20vorrei%20informazioni%20per%20un%20evento!" class="btn-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=393385330102&text=Ciao%20Fabio,%20ti%20contatto%20dal%20sito!" class="btn-whatsapp" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.5 3.33 17L2.03 21.78L6.92 20.5C8.36 21.31 10.15 21.78 12.04 21.78C17.57 21.78 22.07 17.29 22.07 11.75C22.07 9.1 21.03 6.61 19.14 4.72C17.25 2.83 14.7 1.84 12.04 2M12.04 3.79C14.18 3.79 16.2 4.63 17.72 6.14C19.24 7.66 20.08 9.68 20.08 11.82C20.08 16.22 16.5 19.8 12.1 19.8C10.59 19.8 9.13 19.38 7.88 18.59L7.59 18.41L4.69 19.17L5.47 16.38L5.27 16.07C4.4 14.7 3.94 13.11 3.94 11.48C3.94 7.24 7.57 3.79 12.04 3.79M8.61 7.33C8.42 7.33 8.1 7.4 7.83 7.7C7.55 8 6.79 8.71 6.79 10.16C6.79 11.61 7.84 13.01 7.97 13.21C8.13 13.41 10 16.28 12.91 17.54C13.61 17.84 14.14 18 14.56 18.15C15.26 18.37 15.89 18.34 16.39 18.26C16.95 18.18 18.11 17.56 18.35 16.89C18.59 16.22 18.59 15.64 18.52 15.52C18.45 15.4 18.25 15.33 17.96 15.19C17.67 15.04 15.24 13.85 14.79 13.68C14.34 13.52 14.02 13.44 13.7 13.92C13.37 14.4 12.44 15.52 12.15 15.85C11.86 16.18 11.57 16.22 11.28 16.07C10.91 15.92 9.71 15.53 8.3 14.27C7.21 13.3 6.47 12.1 6.25 11.73C6.03 11.37 6.22 11.17 6.37 11.03C6.5 10.9 6.66 10.7 6.8 10.54C6.94 10.38 7 10.27 7.09 10.08C7.18 9.9 7.14 9.73 7.07 9.59C7 9.44 6.37 7.89 6.11 7.25C5.86 6.62 5.6 6.72 5.4 6.71C5.21 6.7 4.99 6.7 4.77 6.7C4.55 6.7 4.19 6.78 3.91 7.08"></path></svg>
                 Inizia a ballare
             </a>
         </div>
     </section>
 
     <section id="info" class="content-section">
-        <h2 style="color:#c5a059">Info & Servizi</h2>
-        <p>Presto online i dettagli sui pacchetti per matrimoni e serate.</p>
+        <h2>Info & Servizi</h2>
+        <p>Contattami per scoprire come rendere indimenticabile il tuo prossimo evento.</p>
     </section>
 
 </body>
