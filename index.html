@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabio Michelon | DJ & Events</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         * { box-sizing: border-box; }
@@ -15,36 +15,38 @@
             padding: 0;
             font-family: 'Montserrat', sans-serif;
             background-color: #ffffff;
-            color: #333;
+            color: #1a1a1a;
             scroll-behavior: smooth;
         }
 
+        /* Menu di navigazione */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px 0;
             display: flex;
             justify-content: center;
             gap: 25px;
             z-index: 1000;
+            border-bottom: 1px solid #f2f2f2;
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #f0f0f0;
         }
 
         nav a {
             text-decoration: none;
             color: #1a1a1a;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             transition: color 0.3s;
         }
 
         nav a:hover { color: #c5a059; }
 
+        /* Sezione Principale */
         .hero {
             height: 100vh;
             display: flex;
@@ -52,68 +54,71 @@
             justify-content: center;
             text-align: center;
             background: radial-gradient(circle, #fff 0%, #f9f9f9 100%);
-            padding-top: 60px;
+            padding: 0 20px;
         }
 
+        /* IL TUO NUOVO FONT: BEBAS NEUE */
         h1 {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(3rem, 10vw, 5.5rem);
-            line-height: 0.9;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(4rem, 18vw, 9rem); /* Molto grande e d'impatto */
+            line-height: 0.85;
             margin: 0;
             color: #1a1a1a;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         h2 {
             font-weight: 700;
             font-size: 1.2rem;
             color: #c5a059;
-            margin-top: 15px;
-            letter-spacing: 5px;
+            margin-top: 10px;
+            letter-spacing: 6px;
             text-transform: uppercase;
         }
 
         p {
             font-size: 1.1rem;
-            color: #666;
-            margin: 30px auto;
+            color: #555;
+            margin: 35px auto;
             max-width: 500px;
-            font-weight: 300;
+            font-weight: 400;
         }
 
+        /* Tasto WhatsApp Verde */
         .btn-whatsapp {
             display: inline-flex;
             align-items: center;
             gap: 12px;
             background-color: #25D366;
             color: white;
-            padding: 18px 35px;
+            padding: 20px 45px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
             animation: pulse 2s infinite;
         }
 
         .btn-whatsapp:hover {
-            transform: scale(1.05);
+            transform: translateY(-3px) scale(1.02);
             background-color: #20ba5a;
         }
 
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
-            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
 
-        svg { width: 22px; height: 22px; fill: white; }
+        svg { width: 24px; height: 24px; fill: white; }
 
         .content-section {
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            min-height: 400px;
+            background: white;
         }
     </style>
 </head>
@@ -131,8 +136,8 @@
             <h1>Fabio<br>Michelon</h1>
             <h2>DJ • Karaoke • Music</h2>
             <p>
-                Professionalità ed energia per il tuo evento.<br>
-                <strong>Matrimoni, Feste Private e Locali.</strong>
+                L'atmosfera perfetta per il tuo evento.<br>
+                <strong>Professionalità ed energia per matrimoni e party.</strong>
             </p>
             
             <a href="https://api.whatsapp.com/send?phone=393385330102&text=Ciao%20Fabio,%20ti%20contatto%20dal%20sito!" class="btn-whatsapp" target="_blank">
@@ -144,10 +149,11 @@
 
     <section id="info" class="content-section">
         <h2>Info & Servizi</h2>
-        <p>Contattami per scoprire come rendere indimenticabile il tuo prossimo evento.</p>
+        <p>Presto online i dettagli sui pacchetti per i tuoi eventi esclusivi.</p>
     </section>
 
 </body>
 </html>
+
 
 
